@@ -1,5 +1,0 @@
-### Robin Rojowiec
-
-## Picture
-
-# etc
