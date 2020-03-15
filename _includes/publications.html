@@ -1,0 +1,28 @@
+<h4>Publications</h4>
+
+<h5>2020</h5>
+
+{%- if site.publications.size > 0 -%}
+
+{% for pub in site.publications %}
+
+<div class="card">
+	
+	<div class="card-body">
+		<h5 class="card-title">{{ pub.title }}</h5>
+		<h6 class="card-subtitle">{{ pub.authors }}.</h6>
+		<div class="card-published"><i>{{ pub.published_in }}</i></div>
+		<div class="card-url">
+			{%- if pub.paper_url -%}
+				<a href="{{ pub.paper }}">Paper</a>
+			{%- endif -%}
+			{%- if pub.source_url -%}
+				<a href="{{ pub.source_url }}">Data</a>
+			{%- endif -%}
+		</div>
+	</div>
+  </div>
+
+{% endfor %}
+
+{%- endif -%}
